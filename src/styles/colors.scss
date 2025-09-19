@@ -1,0 +1,25 @@
+:root {
+  /* Primary Colors */
+  --color-primary-orange: #FF6600;
+  --color-primary-blue: #041356;
+  --color-primary-purple: #200c7a;
+  --color-white: #ffffff;
+  --color-blue: #0000ff;
+  
+  /* Accent Colors */
+  --color-accent-cyan: #00e5ff;
+  --color-accent-orange-light: #ff6b35;
+  --color-accent-orange-medium: #f7931e;
+  --color-accent-orange-hover-light: #ff7d4a;
+  --color-accent-orange-hover-medium: #f69c27;
+  
+  /* Shadow Colors */
+//   --color-shadow-orange-light: rgba(233, 79, 23, 0.82);
+  --color-shadow-orange-light: rgba(220, 211, 211, 0.893);
+  --color-shadow-orange-medium: rgba(255, 107, 53, 0.4);
+  
+  /* Gradients */
+  --gradient-footer: linear-gradient(135deg, var(--color-primary-blue) 0%, var(--color-primary-purple) 100%);
+  --gradient-button: linear-gradient(135deg, var(--color-accent-orange-light) 0%, var(--color-accent-orange-medium) 100%);
+  --gradient-button-hover: linear-gradient(135deg, var(--color-accent-orange-hover-light) 0%, var(--color-accent-orange-hover-medium) 100%);
+}
