@@ -148,61 +148,61 @@
     }
   }
 
-  // Mobile menu toggle (if needed for hamburger menu)
-  &__toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    padding: 5px;
+  // Mobile menu toggle
+//   &__toggle {
+//     display: none;
+//     flex-direction: column;
+//     cursor: pointer;
+//     padding: 5px;
 
-    @media (max-width: 768px) {
-      display: flex;
-    }
+//     @media (max-width: 768px) {
+//       display: flex;
+//     }
 
-    span {
-      width: 25px;
-      height: 3px;
-      background-color: white;
-      margin: 2px 0;
-      transition: 0.3s;
+//     span {
+//       width: 25px;
+//       height: 3px;
+//       background-color: white;
+//       margin: 2px 0;
+//       transition: 0.3s;
 
-      @media (max-width: 480px) {
-        width: 20px;
-        height: 2px;
-      }
-    }
-  }
+//       @media (max-width: 480px) {
+//         width: 20px;
+//         height: 2px;
+//       }
+//     }
+//   }
 
-  // Mobile navigation overlay (if implementing dropdown menu)
-  &__mobile-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: #003575;
-    display: none;
-    flex-direction: column;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  // Mobile navigation overlay
+//   &__mobile-menu {
+//     position: absolute;
+//     top: 100%;
+//     left: 0;
+//     right: 0;
+//     background-color: #003575;
+//     display: none;
+//     flex-direction: column;
+//     padding: 20px;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-    &--active {
-      display: flex;
+//     &--active {
+//       display: flex;
 
-      @media (max-width: 768px) {
-        display: flex;
-      }
-    }
+//       @media (max-width: 768px) {
+//         display: flex;
+//       }
+//     }
 
-    .navbar__navigation {
-      flex-direction: column;
-      gap: 15px;
-      width: 100%;
+//     .navbar__navigation {
+//       flex-direction: column;
+//       gap: 15px;
+//       width: 100%;
 
-      &__button {
-        width: 100%;
-        text-align: center;
-        padding: 12px;
-      }
-    }
-  }
+//       &__button {
+//         width: 100%;
+//         text-align: center;
+//         padding: 12px;
+//       }
+//     }
+//   }
 }

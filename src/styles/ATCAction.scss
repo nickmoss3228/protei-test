@@ -1,7 +1,9 @@
 body {
-    background-color: white;
+  background-color: white;
 }
-.ATC-wrapper {
+
+.ATC {
+  &-wrapper {
     background-color: white;
     color: black;
     display: flex;
@@ -9,50 +11,56 @@ body {
     align-items: center;
     text-align: center;
     flex-direction: column;
-}
-.ATC-headers {
+  }
+
+  &-headers {
     margin-top: 50px;
-    max-width:1200px ;
+    max-width: 1200px;
     font-weight: 700;
     font-size: 22px;
     line-height: 51px;
     letter-spacing: 0.5px;
-}
-.ATC-header {
+  }
+
+  &-header {
     margin: 0;
     margin-bottom: 10px;
-}
 
-.ATC-header__sm {
-    font-weight: 500;
-    margin-top: 0px;
-    font-size: 30px;
-}
+    &__sm {
+      font-weight: 500;
+      margin-top: 0px;
+      font-size: 30px;
+    }
+  }
 
-.ATC-options {
+  &-options {
     display: flex;
     flex-direction: row;
-}
-.ATC-option {
+  }
+
+  &-option {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
 
-.ATC-option__img img {
-    border-radius: 30px;
-    width: 470px;
-    height: 500px;
-    margin-right: 25px;
-    margin-bottom: 7px;
-}
+    &__img {
+      img {
+        border-radius: 30px;
+        width: 470px;
+        height: 500px;
+        margin-right: 25px;
+        margin-bottom: 7px;
+      }
+    }
 
-.ATC-option__txt {
-    border: 1px black solid;
-    border-radius: 30px;
-    padding: 20px;
-    min-width: 320px;
-    font-size: 22px;
-    line-height: 30px;
+    &__txt {
+      border: 1px black solid;
+      border-radius: 30px;
+      padding: 20px;
+      min-width: 320px;
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
 }
