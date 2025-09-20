@@ -1,5 +1,4 @@
 import "../styles/Mainpage.scss";
-import { TbHandFinger } from "react-icons/tb";
 import Touch from '../assets/touch.png'
 import { CgInfo } from "react-icons/cg";
 import { Link } from "react-router";

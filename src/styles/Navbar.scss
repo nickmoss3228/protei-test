@@ -3,19 +3,25 @@
   background-color: #003575;
   display: flex;
   align-items: center;
-  justify-content: center;
   position: relative;
   padding: 0 20px;
 
   @media (max-width: 768px) {
     height: 70px;
     padding: 0 15px;
-    justify-content: space-between;
   }
 
   @media (max-width: 480px) {
     height: 60px;
     padding: 0 10px;
+  }
+
+  // Left section - always visible
+  &__left-section {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0; // Prevent shrinking
+    margin-left: 90px;
   }
 
   &__home-button,
@@ -28,7 +34,7 @@
     transition: color 0.3s ease;
 
     &:hover {
-      color: orange;
+      color: #FF6600;
     }
 
     @media (max-width: 768px) {
@@ -44,21 +50,47 @@
     }
   }
 
+  // Middle section - scrollable
+  &__middle-section {
+    flex: 1;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 0 20px;
+    
+    // Hide scrollbar but keep functionality
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    
+    &::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, Opera */
+    }
+
+    @media (max-width: 768px) {
+      margin: 0 15px;
+    }
+
+    @media (max-width: 480px) {
+      margin: 0 10px;
+    }
+  }
+
+  // Right section - always visible
+  &__right-section {
+    flex-shrink: 0; // Prevent shrinking
+  }
+
   &__logo {
     img {
       width: 150px;
-      margin-left: 20px;
       height: auto;
+      margin-right: 120px;
 
       @media (max-width: 768px) {
         width: 120px;
-        margin-left: 10px;
       }
 
       @media (max-width: 480px) {
         width: 100px;
-        margin-left: -60px;
-        display: none;
       }
     }
   }
@@ -67,6 +99,9 @@
     display: flex;
     gap: 20px;
     align-items: center;
+    min-width: max-content; // Prevent wrapping
+    justify-content: center;
+    padding-right: 10px; // Add some padding for scroll
 
     @media (max-width: 768px) {
       gap: 15px;
@@ -74,13 +109,17 @@
 
     @media (max-width: 480px) {
       gap: 10px;
-      overflow: scroll;
+    }
+    
+    &__info {
+      font-size: 17px;
+      margin-left: 8px;
     }
 
     &__button {
       font-family: inherit;
       font-weight: 300;
-      padding: 10px;
+      padding: 8px;
       margin: 4px;
       background-color: transparent;
       border: 1px solid white;
@@ -89,9 +128,12 @@
       color: white;
       transition: all 0.3s ease;
       white-space: nowrap;
+      display: flex;
+      flex-direction: row;
+      flex-shrink: 0; // Prevent button shrinking
 
       &:hover {
-        border: 1px solid orange;
+        border: 1px solid #FF6600;
         transform: translateY(-1px);
       }
 
@@ -113,6 +155,7 @@
       margin-right: 8px;
       font-size: 14px;
       color: white;
+      flex-shrink: 0; // Prevent text shrinking
 
       @media (max-width: 768px) {
         font-size: 12px;
@@ -147,6 +190,7 @@
       }
     }
   }
+}
 
   // Mobile menu toggle
 //   &__toggle {
@@ -205,4 +249,3 @@
 //       }
 //     }
 //   }
-}
