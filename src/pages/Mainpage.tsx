@@ -225,12 +225,12 @@ const Mainpage = () => {
             <div className="footer__lists">
               <ul className="footer__list">
                 <li className="footer__item">Топ-менеджеров</li>
-                <li className="footer__item">Службе безопасности</li>
-                <li className="footer__item">Службе эксплуатации</li>
+                <li className="footer__item">Служб безопасности</li>
+                <li className="footer__item">Служб эксплуатации</li>
               </ul>
               <ul className="footer__list">
                 <li className="footer__item">Диспетчерских центров</li>
-                <li className="footer__item">Всех сотрудников предприятий</li>
+                <li className="footer__item">Всех сотрудников предприятия</li>
               </ul>
             </div>
           </div>
