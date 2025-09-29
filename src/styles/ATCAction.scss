@@ -7,7 +7,7 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    padding: 0 20px; // horizontal padding for mobile
+    padding: 0 20px; // for mobile
   }
 
   &-headers {
@@ -52,14 +52,13 @@
     margin-top: clamp(20px, 3vh, 40px);
     margin-bottom: clamp(30px, 4vh, 50px);
     
-    // Mobile: Stack vertically
+    // Stack vertically
     @media (max-width: 768px) {
       flex-direction: column;
       align-items: center;
       gap: 30px;
     }
     
-    // Tablet: 2 columns or adjusted spacing
     @media (min-width: 769px) and (max-width: 1024px) {
       flex-wrap: wrap;
       gap: 20px;
@@ -133,7 +132,7 @@
         font-size: 19px;
       }
       
-      // Remove line breaks on very small screens
+      // Remove line breaks
       @media (max-width: 480px) {
         br {
           display: none;
