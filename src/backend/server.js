@@ -1,5 +1,5 @@
-import express from 'express'
-
+// import express from 'express'
+const express = require('express')
 const cors = require('cors');
 const { Pool } = require('pg');
 const bcrypt = require('bcrypt');
@@ -21,6 +21,7 @@ app.use(cors({
   origin: ['http://localhost:5173', 'http://localhost:3000'],
   credentials: true, 
 }));
+
 app.use(express.json());
 
 app.get('/', (req, res) => {
